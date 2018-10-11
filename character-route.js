@@ -21,10 +21,10 @@ router.get('/characters', (req, res) => {
 
 router.post('/characters', (req, res) => {
   const character = new Character({
-    name: req.body.name,
-    race: req.body.race,
-    vocation: req.body.vocation,
-    weapon: req.body.weapon
+    currentName: req.body.currentName,
+    currentRace: req.body.currentRace,
+    currentVocation: req.body.currentVocation,
+    currentWeapon: req.body.currentWeapon
   });
   character.save();
   res.json(character);
