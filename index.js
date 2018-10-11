@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const { PORT, CLIENT_ORIGIN } = require('./config');
 const { dbConnect } = require('./db-mongoose');
 
-const characterRouter = require('./character-route');
+const characterRouter = require('./routes/character-route');
 
 const app = express();
 
